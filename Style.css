@@ -32,6 +32,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    height: 100vh;  
     
 
 }
@@ -44,7 +45,8 @@ body *{
 }
 
 #Container1{
-    width: 360px;
+    width: 100%;
+    max-width: 460px;
     margin: 56px auto 0px;
     padding: 0px 24px;
     
@@ -186,5 +188,17 @@ footer{
     padding: 24px 0px;
     text-align: center;
 }
+
+@media (min-width:600px){
+    :root{
+        --bg-url:url(./assets/bg-desktop.jpg);
+    }
+
+    .Light{
+        --bg-url:url(./assets/bg-desktop-light.jpg  );
+    }
+    
+}
+
 
 
